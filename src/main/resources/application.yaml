@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: tienda
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5440/tiendadb}
+    username: ${DB_user:tienda}
+    password: ${DB_PASSWORD:tienda123}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  jwt:
+    secret: "clave-secreta-muy-larga-para-que-sea-segura-minimo-256-bits-requeridos"
+    expiration: 86400000
