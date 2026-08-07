@@ -36,7 +36,7 @@ Clona el repositorio y levanta todo el sistema con un solo comando:
 
 bash
 git clone https://github.com/Estivencr/Mi-tienda
-cd tienda
+cd Mi-tienda
 docker compose up --build
 
 Esto levanta dos contenedores: la aplicación Spring Boot y una base de datos PostgreSQL, conectados entre sí y listos para usar. La API queda disponible en http://localhost:8080.
