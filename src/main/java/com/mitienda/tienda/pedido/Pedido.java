@@ -80,6 +80,10 @@ public class Pedido {
         return total;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public List<LineaPedido> getLineas() {
         return lineas;
     }
