@@ -193,8 +193,6 @@ class PedidoServiceTest {
         // Given
         autenticarComo("cliente@tienda.com");
 
-        when(usuarioRepository.findByEmail("cliente@tienda.com"))
-                .thenReturn(Optional.of(usuario("cliente@tienda.com")));
         when(pedidoRepository.findById(99L))
                 .thenReturn(Optional.empty());
 

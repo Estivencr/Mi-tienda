@@ -68,4 +68,8 @@ public class LineaPedido {
     public BigDecimal getSubtotal() {
         return subtotal;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
